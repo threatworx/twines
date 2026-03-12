@@ -1,0 +1,7 @@
+services:
+    twines:
+        image: threatworx/twines:latest
+        container_name: threatworx_twines
+        network_mode: "host"
+        environment:
+                LISTEN_ON: "zeek0"
